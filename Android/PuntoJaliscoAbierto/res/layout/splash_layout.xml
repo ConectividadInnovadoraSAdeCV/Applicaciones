@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayOut"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity" >
+	
+    <LinearLayout 
+    	android:id="@+id/LV1"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal" >
+
+        <ImageView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+            android:contentDescription="@string/logo_jalisco"
+            android:src="@drawable/logo_jalisco" />    	
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/LVAUX1"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".5"
+    	android:orientation="horizontal" >   	
+	</LinearLayout>
+	
+    <LinearLayout 
+    	android:id="@+id/LV2"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".9"
+    	android:orientation="horizontal" >  		
+    	<ImageView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+    	    android:contentDescription="@string/logo_bienestar"
+    	    android:src="@drawable/logo_bienestar"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/LVAUX2"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".5"
+    	android:orientation="horizontal" >   	
+	</LinearLayout>
+	
+    <LinearLayout 
+    	android:id="@+id/LV3"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal" >	 		
+    	<ImageView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+    	    android:contentDescription="@string/logo_secretaria"
+    	    android:src="@drawable/logo_secretaria"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/LVAUX3"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".5"
+    	android:orientation="horizontal" >   	
+	</LinearLayout>
+	
+
+    <LinearLayout 
+    	android:id="@+id/LV4"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal" >	
+    	<ImageView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+    	    android:contentDescription="@string/logo_coecytjal"
+    	    android:src="@drawable/logo_coecytjal"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:id="@+id/LVAUX4"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight=".5"
+    	android:orientation="horizontal" >   	
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/LV5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+    	<ProgressBar
+    	    android:id="@+id/progressBarSplash"
+    	    style="?android:attr/progressBarStyleLarge"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent" />
+
+	</LinearLayout>
+
+</LinearLayout>

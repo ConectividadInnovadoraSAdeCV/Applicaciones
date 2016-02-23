@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondoencuesta" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="@dimen/loginwidth"
+        android:layout_height="@dimen/loginheight"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lay_round_corners"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/aviso_leyenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/loginback"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margen"
+            android:paddingLeft="@dimen/btpading"
+            android:paddingRight="@dimen/btpading"
+            android:paddingTop="@dimen/margen"
+            android:text="@string/aviso_etiqueta"
+            android:textColor="@color/loginborder"
+            android:textSize="@dimen/fontrutasize" />
+
+        <WebView
+            android:id="@+id/aviso_webview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="@dimen/bigmargen"
+             />
+
+        <Button
+            android:id="@+id/aviso_aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/bigmargen"
+            android:background="@drawable/boton_green"
+            android:paddingBottom="@dimen/bigmargen"
+            android:paddingLeft="@dimen/margen"
+            android:paddingRight="@dimen/margen"
+            android:paddingTop="@dimen/bigmargen"
+            android:text="@string/aviso_aceptar"
+            android:textAllCaps="false"
+            android:textColor="@color/solidwhite" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#30FFFFFF</color> 
+    <color name="solidwhite">#FFFFFFFF</color>    
+    <color name="clear">#00FFFFFF</color>  
+    <color name="ruta">#FFA21F31</color>   
+    <color name="loginback">#FFEEC5C5</color> 
+    <color name="loginbtback">#FF7ED321</color> 
+    <color name="loginborder">#FFF26D7D</color> 
+    
+    <color name="loginLabels">#FF000000</color>   
+    <!-- logon wondow -->
+    <color name="login_round_border">#FFB1BCBE</color> 
+    <color name="green">#FF7ED321</color>   
+    <color name="red">#FFFF0000</color>   
+    <color name="spiner_text">#FFB1BCBE</color>
+    <!-- Encuetas -->       
+    <color name="fondo_pregunta">#FFB8E986</color>
+    <color name="texto_pregunta">#FF417505</color>
+    
+    
+     
+</resources>

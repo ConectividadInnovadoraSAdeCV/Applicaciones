@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logotopmargin">0px</dimen>
+    <dimen name="logowidth">200px</dimen>
+    <dimen name="logoheight">110px</dimen> 
+    <dimen name="listimagesize">35dp</dimen>  
+    <dimen name="titleheihg">70dp</dimen>  
+      
+    <dimen name="btpading">20dp</dimen>        
+    <dimen name="fontrutasize">24sp</dimen>   
+    <dimen name="fontlistrutasize">16sp</dimen> 
+    <dimen name="fontlistrutasizesmall">11sp</dimen>  
+    <dimen name="listleftpad">12dp</dimen>  
+    <dimen name="fontsmall">10sp</dimen>  
+    
+    
+    <!-- login layout -->    
+    <dimen name="bigmargen">15dp</dimen> 
+    <dimen name="xtrememargen">30dp</dimen> 
+    <dimen name="margen">5dp</dimen> 
+    <dimen name="loginwidth">300dp</dimen> 
+    <dimen name="loginheight">450dp</dimen>  
+    <dimen name="login_stroke_width">1dp</dimen>  
+    <dimen name="login_corner_radius">10dp</dimen>    
+    <dimen name="fontlabelsize">24sp</dimen>  
+    
+    <!-- end login layout -->     
+    <dimen name="encuestaPreguntaPading">60dp</dimen>  
+    
+    
+</resources>

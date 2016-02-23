@@ -1,0 +1,4 @@
+repository "PuntoJaliscoAbierto@localhost:8087"
+  path "/"
+    smartbranch "/main" changeset "27"                                        
+     

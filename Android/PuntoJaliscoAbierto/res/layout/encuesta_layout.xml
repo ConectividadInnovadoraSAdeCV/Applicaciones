@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondoencuesta" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/loginwidth"
+        android:layout_height="@dimen/loginheight"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lay_round_corners" >
+
+        <ImageView
+            android:id="@+id/encuestalogo"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="@dimen/margen"
+            android:src="@drawable/logo_punto_jalisco" />
+
+        <TextView
+            android:id="@+id/encuestaPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/encuestaPreguntaPading"
+            android:layout_below="@+id/encuestalogo"
+            android:layout_centerHorizontal="true"
+            android:background="@color/fondo_pregunta"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margen"
+            android:paddingLeft="@dimen/btpading"
+            android:paddingRight="@dimen/btpading"
+            android:paddingTop="@dimen/margen"
+            android:text="@string/leyendaregistro"
+            android:textColor="@color/texto_pregunta"
+            android:textStyle="bold"
+            android:textSize="@dimen/fontlistrutasize"/>
+
+        <WebView
+            android:id="@+id/encuestaImagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/encuestaPregunta"
+            android:layout_margin="@dimen/xtrememargen" />
+        <ProgressBar
+            android:id="@+id/progressBarEncuesta"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logowidth"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"           
+            android:layout_below="@+id/encuestaImagen" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/encuestaRespuesta1Bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/bigmargen"
+                android:layout_marginStart="@dimen/bigmargen"
+                android:background="@drawable/boton_background"
+                android:paddingBottom="@dimen/bigmargen"
+                android:paddingLeft="@dimen/margen"
+                android:paddingRight="@dimen/margen"
+                android:paddingTop="@dimen/bigmargen"
+                android:text="@string/R1"
+                android:textAllCaps="false"
+                android:textColor="@color/solidwhite" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/encuestaRespuesta2Bt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margen"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginRight="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_background"
+                android:paddingBottom="@dimen/bigmargen"
+                android:paddingLeft="@dimen/margen"
+                android:paddingRight="@dimen/margen"
+                android:paddingTop="@dimen/bigmargen"
+                android:text="@string/R2"
+                android:textAllCaps="false"
+                android:textColor="@color/solidwhite" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/encuestaRespuesta3Bt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/bigmargen"
+                android:layout_marginRight="@dimen/bigmargen"
+                android:background="@drawable/boton_background"
+                android:paddingBottom="@dimen/bigmargen"
+                android:paddingLeft="@dimen/margen"
+                android:paddingRight="@dimen/margen"
+                android:paddingTop="@dimen/bigmargen"
+                android:text="@string/R3"
+                android:textAllCaps="false"
+                android:textColor="@color/solidwhite" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondoencuesta" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/loginwidth"
+        android:layout_height="@dimen/loginheight"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lay_round_corners" >
+
+        <!-- Arturo el 120515 pidio que se quitara el logo de esta pantalla 
+        <ImageView
+            android:id="@+id/ldllogo"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logoheight"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_punto_jalisco"
+            android:paddingBottom="@dimen/bigmargen" />
+        -->
+
+        <TextView
+            android:id="@+id/lgdregtx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/loginback"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margen"
+            android:paddingLeft="@dimen/btpading"
+            android:paddingRight="@dimen/btpading"
+            android:paddingTop="@dimen/margen"
+            android:text="@string/leyendaregistro"
+            android:textColor="@color/loginborder" />
+
+        <TextView
+            android:id="@+id/lgdDatelb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lgdregtx"
+            android:gravity="start"
+            android:paddingStart="@dimen/btpading"
+            android:paddingEnd="@dimen/btpading"
+            android:paddingLeft="@dimen/btpading"
+            android:paddingTop="@dimen/bigmargen"
+            android:text="@string/borndatelabel"
+            android:textSize="@dimen/fontlabelsize" />
+        
+        <Spinner
+            android:id="@+id/lgdDiaSpin"           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_below="@+id/lgdDatelb"            
+            android:gravity="start"
+            android:layout_margin="@dimen/margen"
+            android:padding="@dimen/bigmargen"
+            
+            android:background="@drawable/lay_round_corners_green"
+            android:entries="@array/spinner_dia"
+            android:spinnerMode="dropdown" />
+        
+        
+        <Spinner
+            android:id="@+id/lgdMesSpin"           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_below="@+id/lgdDatelb"  
+            android:layout_toRightOf="@+id/lgdDiaSpin"
+            android:layout_toEndOf="@+id/lgdDiaSpin"
+                      
+            android:gravity="start"
+            android:layout_margin="@dimen/margen"
+            android:padding="@dimen/bigmargen"
+            
+            android:background="@drawable/lay_round_corners"
+            android:entries="@array/spinner_mes"
+            android:spinnerMode="dropdown" />
+        
+        <Spinner
+            android:id="@+id/lgdAnoSpin"           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_below="@+id/lgdDatelb"  
+            android:layout_toRightOf="@+id/lgdMesSpin"
+            android:layout_toEndOf="@+id/lgdMesSpin"
+                      
+            android:gravity="start"
+            android:layout_margin="@dimen/margen"
+            android:padding="@dimen/bigmargen"
+            
+            android:background="@drawable/lay_round_corners_red"
+            android:entries="@array/spinner_ano"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/lgdSexolb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lgdDiaSpin"
+            android:gravity="start"
+            android:paddingStart="@dimen/btpading"
+            android:paddingEnd="@dimen/btpading"
+            android:paddingLeft="@dimen/btpading"
+            android:paddingTop="@dimen/bigmargen"
+            android:text="@string/sexlabel"
+            android:textSize="@dimen/fontlabelsize" />
+        
+        <RadioGroup
+            android:id="@+id/LgdSexoRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_below="@+id/lgdSexolb"
+            android:checkedButton="@+id/rdbOne"
+            android:orientation="horizontal"
+            android:padding="@dimen/margen" >
+
+            <RadioButton
+                android:id="@+id/rdbOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hombrelabel"
+                android:textColor="@color/login_round_border"
+                android:paddingRight="@dimen/bigmargen"
+                android:paddingLeft="@dimen/margen"
+                android:paddingEnd="@dimen/bigmargen"
+                android:paddingStart="@dimen/margen"
+                android:drawableRight="@drawable/selector"
+                android:drawableEnd="@drawable/selector"
+                android:button="@null"
+                android:drawablePadding="@dimen/margen"
+                />
+
+            <RadioButton
+                android:id="@+id/rdbTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mujerlabel"                
+                android:textColor="@color/login_round_border"
+                android:drawableRight="@drawable/selector"
+                android:drawableEnd="@drawable/selector"
+                android:button="@null"
+                android:drawablePadding="@dimen/margen"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/lgdextras"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margen"
+            android:layout_below="@+id/LgdSexoRadio"
+            android:layout_centerHorizontal="true"
+            android:background="@color/loginback"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/margen"
+            android:paddingLeft="@dimen/btpading"
+            android:paddingRight="@dimen/btpading"
+            android:paddingTop="@dimen/margen"
+            android:textColor="@color/loginborder" />
+        
+        <CheckBox
+            android:id="@+id/LgdAyudaAuditiva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_below="@+id/lgdextras"  
+            android:text="@string/ayuda_auditiva"
+            android:textSize="@dimen/fontlistrutasize"
+            android:layout_marginTop="@dimen/bigmargen" />
+        
+
+        <CheckBox
+            android:id="@+id/LgdAvisoAceptado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_below="@+id/LgdAyudaAuditiva"  
+            android:text="@string/aviso_conformidad"
+            android:textSize="@dimen/fontsmall"
+            android:layout_marginTop="@dimen/bigmargen" 
+            android:onClick="onCheckboxClicked"/>
+        
+        <Button 
+            android:id="@+id/LgdEnviarBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"         
+            android:layout_below="@+id/LgdAvisoAceptado"            
+            android:layout_margin="@dimen/bigmargen"
+            android:background="@drawable/boton_green"
+            android:text="@string/registrar"
+            android:textColor="@color/solidwhite"
+            android:textAllCaps="false"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

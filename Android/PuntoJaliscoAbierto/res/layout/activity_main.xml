@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_punto_jalisco" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ruta"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/rutaspinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:prompt="@string/spinner_title"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/maplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:baselineAligned="false" >
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mainopenmapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarMain"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/logowidth"
+            android:layout_height="@dimen/logowidth"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btactualiza"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/clear"
+            android:drawableTop="@drawable/actualizar"
+            android:text="@string/btrefresh" />
+
+        <Button
+            android:id="@+id/btruta"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/clear"
+            android:drawableTop="@drawable/camion"
+            android:text="@string/btrutas" />
+
+        <Button
+            android:id="@+id/btconf"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/clear"
+            android:drawableTop="@drawable/configuracion"
+            android:text="@string/btconf" />
+    </RelativeLayout>
+
+</LinearLayout>

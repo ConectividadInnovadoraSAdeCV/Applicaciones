@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logotopmargin">250px</dimen>
+    <dimen name="logowidth">250px</dimen>
+    <dimen name="logoheight">250px</dimen>    
+</resources>
